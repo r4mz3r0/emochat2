@@ -1,0 +1,83 @@
+version: "3.1"
+
+stories:
+  # Greeting and well-being check
+  - story: greet and ask well-being
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: ask_wellbeing
+      - action: utter_wellbeing_response
+
+  # Positive mood interaction
+  - story: positive mood response
+    steps:
+      - intent: mood_great
+      - action: utter_happy_response
+
+  # Negative mood and emotional support
+  - story: negative mood and cheer up
+    steps:
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy_response
+
+  # Request for cat picture
+  - story: request cat picture
+    steps:
+      - intent: request_cat_picture
+      - action: action_show_cat_picture
+
+  # Joke request
+  - story: ask for a joke
+    steps:
+      - intent: ask_joke
+      - action: utter_joke
+
+  # Goodbye
+  - story: say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+
+  # Bot identity inquiry
+  - story: bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  # Ask bot's name
+  - story: ask for bot's name
+    steps:
+      - intent: ask_bot_name
+      - action: utter_bot_name
+
+  # Ask who created the bot
+  - story: ask bot creator
+    steps:
+      - intent: ask_bot_creator
+      - action: utter_bot_creator
+
+  # Help request
+  - story: user asks for help
+    steps:
+      - intent: ask_help
+      - action: utter_help_response
+
+  # Negative mood and joke request
+  - story: cheer up with joke
+    steps:
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - intent: ask_joke
+      - action: utter_joke
+
+  # Greet and request cat picture
+  - story: greet and ask for cat picture
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: request_cat_picture
+      - action: action_show_cat_picture

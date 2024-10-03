@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="chat-container">
+        <div id="chat-window" class="chat-box">
+            <div id="messages"></div>
+        </div>
+        <div class="input-container">
+            <input id="user-input" type="text" placeholder="Type your message..." />
+            <button id="send-button">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#ffffff">
+                    <path d="M0 0h24v24H0V0z" fill="none"/>
+                    <path d="M3.4 20.3l15.9-8.5c.6-.3.6-1.1 0-1.5L3.4 1.8c-.6-.3-1.4.2-1.4.8v5.7c0 .4.3.8.7.9l10.4 1.8-10.4 1.8c-.4.1-.7.5-.7.9v5.7c0 .6.8 1.2 1.4.8z"/>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - ask_wellbeing
+  - mood_great
+  - mood_unhappy
+  - affirm
+  - deny
+  - request_cat_picture
+  - ask_joke
+  - bot_challenge
+  - ask_help
+  - ask_bot_name
+  - ask_bot_creator
+
+actions:
+  - action_show_cat_picture
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Take care and have a wonderful day!"
+
+  utter_happy_response:
+    - text: "I'm so happy to hear that! Keep spreading the positive vibes."
+
+  utter_cheer_up:
+    - text: "I'm sorry you're feeling down. Here's something to cheer you up!"
+      image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+    - text: "Did that help you feel better?"
+
+  utter_iamabot:
+    - text: "I am a chatbot here to offer emotional support and brighten your day!"
+
+  utter_joke:
+    - text: "Why don't scientists trust atoms? Because they make up everything!"
+
+  utter_help_response:
+    - text: "I'm here to support you! Let me know how I can help you today."
+
+  utter_bot_name:
+    - text: "You can call me SupportBot."
+
+  utter_bot_creator:
+    - text: "I was created by an amazing team of developers to provide emotional support and share cute cat pictures."
+
+  utter_wellbeing_response:
+    - text: "I'm doing great, thank you! How are you feeling today?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

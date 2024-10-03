@@ -1,0 +1,132 @@
+version: "3.1"
+
+nlu:
+  # Greeting
+  - intent: greet
+    examples: |
+      - Hi
+      - Hello
+      - Hey there
+      - Good morning
+      - Hi, how are you?
+      - Hello, what's up?
+      - Hi bot!
+      - Hey, how's it going?
+
+  # Goodbye
+  - intent: goodbye
+    examples: |
+      - Goodbye
+      - See you later
+      - Bye
+      - Take care
+      - Talk to you soon
+      - Catch you later
+
+  # Ask Well-being
+  - intent: ask_wellbeing
+    examples: |
+      - How are you?
+      - How's your day?
+      - How do you feel?
+      - How's life treating you?
+      - How's everything going?
+      - Are you feeling good?
+
+  # Positive mood
+  - intent: mood_great
+    examples: |
+      - I'm feeling great
+      - I'm very happy today
+      - I’m doing awesome!
+      - Everything is perfect!
+      - I feel amazing
+      - Today is a good day
+
+  # Negative mood
+  - intent: mood_unhappy
+    examples: |
+      - I'm feeling sad
+      - I'm upset today
+      - I feel anxious
+      - I'm stressed out
+      - I'm feeling low
+      - I'm having a bad day
+      - I need help, I'm feeling down
+      - I don’t feel good right now
+
+  # Affirmation
+  - intent: affirm
+    examples: |
+      - Yes
+      - Yeah
+      - Sure
+      - Absolutely
+      - Of course
+      - That's right
+      - Yep, you're correct
+
+  # Denial
+  - intent: deny
+    examples: |
+      - No
+      - Nope
+      - I don’t think so
+      - Not really
+      - No way
+      - That’s not right
+
+  # Request for a cat picture
+  - intent: request_cat_picture
+    examples: |
+      - Can you show me a cat picture?
+      - I need a cute cat picture
+      - Send me a cat picture
+      - Can I see a cat photo?
+      - Show me a cat!
+
+  # Ask for jokes
+  - intent: ask_joke
+    examples: |
+      - Tell me a joke
+      - Can you make me laugh?
+      - I need a joke
+      - What’s a good joke?
+      - Do you know any jokes?
+
+  # Small talk: bot's identity
+  - intent: bot_challenge
+    examples: |
+      - Are you a bot?
+      - What are you?
+      - Are you human?
+      - Who built you?
+      - What is your purpose?
+      - Are you real?
+
+  # Ask for help
+  - intent: ask_help
+    examples: |
+      - Can you help me?
+      - I need help
+      - I need some advice
+      - Can you support me?
+      - Help me, please
+
+  # Ask bot's name
+  - intent: ask_bot_name
+    examples: |
+      - What's your name?
+      - Do you have a name?
+      - What should I call you?
+      - Who are you?
+      - What’s your name?
+
+  # Ask who created the bot
+  - intent: ask_bot_creator
+    examples: |
+      - Who made you?
+      - Who created you?
+      - Who designed you?
+      - Who built you?
+      - Who developed this bot?
